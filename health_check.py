@@ -5,9 +5,7 @@ import psutil
 from time import sleep
 
 #mail data
-_MAIL_SERVER = "mail.stub.net"
-_MAIL_PWD = "qwertypass"
-_MAIL_FROM = "me"
+
 _MAIL_TO = "you"
 #mail templates
 _MAIL_SUBJECT = "System health alert"
@@ -42,6 +40,6 @@ def system_checker():
         #if bad
         if bad:
             where = "here"
-            email_sender.send_email(_MAIL_FROM, _MAIL_TO, _MAIL_SUBJECT, _MAIL_MSG_TEMPLATE.format(where))
+            email_sender.send_email(_MAIL_TO, _MAIL_SUBJECT, _MAIL_MSG_TEMPLATE.format(where))
             break
         sleep(_TIMEOUT)
