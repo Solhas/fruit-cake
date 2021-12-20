@@ -9,7 +9,7 @@ from reportlab.platypus import Paragraph, Spacer, Table, Image
 def build_pdf(filename, data):
     styles = getSampleStyleSheet()
     pdf_compile = []
-    blank = Spacer(1,0.2*inch)
+    blank = Spacer(1,0)
     for p in data:
         next_block = Paragraph(p[0], styles[p[1]])
         pdf_compile.append(next_block)
