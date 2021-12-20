@@ -1,2 +1,2 @@
 # fruit-cake
-Google IT automation capstone week 4 project
+Google IT automation course capstone week 4 lab scripts
